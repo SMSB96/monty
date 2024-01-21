@@ -26,6 +26,21 @@ void f_pop(stack_t **head, unsigned int counter)
 	free(h);
 }
 
+
+/**
+ * f_nop - do nothing
+ * @head: pointer to pointer of first node
+ * @counter: line counter
+ *
+ * Return: none
+ */
+
+void f_nop(stack_t **head, unsigned int counter)
+{
+	(void) counter;
+	(void) head;
+}
+
 /**
  * f_pint - print top node on stack
  * @head: pointer to pointer of first node
@@ -46,18 +61,4 @@ void f_pint(stack_t **head, unsigned int counter)
 	}
 
 	printf("%d\n", (*head)->n);
-}
-
-/**
- * f_nop - do nothing
- * @head: pointer to pointer of first node
- * @counter: line counter
- *
- * Return: none
- */
-
-void f_nop(stack_t **head, unsigned int counter)
-{
-	(void) counter;
-	(void) head;
 }

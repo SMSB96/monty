@@ -1,22 +1,6 @@
 #include "monty.h"
 
 /**
- * f_queue - print first node of queue
- * @head: first node of queue (unused)
- * @counter: line counter (unused)
- *
- * Return: none
- */
-
-void f_queue(stack_t **head, unsigned int counter)
-{
-	(void)head;
-	(void)counter;
-
-	bus.lifi = 1;
-}
-
-/**
  * addqueue - add node to tail of queue
  * @n: new value
  * @head: head of the queue
@@ -52,4 +36,20 @@ void addqueue(stack_t **head, int n)
 		temp->next = new_node;
 		new_node->prev = temp;
 	}
+}
+
+/**
+ * f_queue - print first node of queue
+ * @head: first node of queue (unused)
+ * @counter: line counter (unused)
+ *
+ * Return: none
+ */
+
+void f_queue(stack_t **head, unsigned int counter)
+{
+        (void)head;
+        (void)counter;
+
+        bus.lifi = 1;
 }
